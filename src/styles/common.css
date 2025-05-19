@@ -1,0 +1,125 @@
+/* Estilos base compartidos */
+.content-container {
+    padding: 16px;
+    height: 100%;
+    overflow-y: auto;
+  }
+  
+  .grid-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .grid-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -12px;
+  }
+  
+  .grid-col {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0 12px;
+  }
+  
+  /* Card básica */
+  .card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    overflow: hidden;
+    padding-right: 20px;
+  }
+  
+  .card-header {
+    padding: 16px 20px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .card-title {
+    margin: 0;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .card-content {
+    padding: 16px 20px;
+  }
+  
+  /* Mensajes de estado */
+  .error-message {
+    padding: 12px 16px;
+    background-color: rgba(235, 68, 90, 0.1);
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .error-message p {
+    color: #eb445a;
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  .success-message {
+    padding: 12px 16px;
+    background-color: rgba(45, 211, 111, 0.1);
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .success-message p {
+    color: #2dd36f;
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  /* Spinner de carga */
+  .loading-container {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+  }
+  
+  .spinner {
+    width: 30px;
+    height: 30px;
+    border: 3px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    border-top-color: #9d4edd;
+    animation: spin 1s ease infinite;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Media queries base */
+  @media (min-width: 768px) {
+    .content-container {
+      padding: 24px;
+    }
+  }
+
+  .grid-col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0 12px;
+    margin-bottom: 24px;
+  }
+  
+  @media (min-width: 768px) {
+    .grid-col-md-6 {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+    
+    .grid-col-md-4 {
+      flex: 0 0 33.333333%;
+      max-width: 33.333333%;
+    }
+  }
