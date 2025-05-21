@@ -1,0 +1,202 @@
+.users-page {
+  width: 100%;
+}
+
+.users-page .search-container {
+  margin-bottom: 20px;
+}
+
+.users-page .search-input {
+  width: 100%;
+  padding: 10px 16px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.users-page .search-input:focus {
+  border-color: #9d4edd;
+}
+
+.users-page .empty-message {
+  text-align: center;
+  padding: 24px 0;
+}
+
+.users-page .empty-message p {
+  color: #92949c;
+  margin: 0;
+  font-size: 14px;
+}
+
+.users-page .users-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.users-page .user-item {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.2s;
+}
+
+.users-page .user-item:last-child {
+  border-bottom: none;
+}
+
+.users-page .user-item:hover {
+  background-color: #f9f9f9;
+}
+
+.users-page .user-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: #666;
+  margin-right: 16px;
+}
+
+.users-page .user-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.users-page .user-nombre {
+  margin: 0 0 4px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+}
+
+.users-page .user-email {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.users-page .badge {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 16px;
+  font-size: 12px;
+  font-weight: 500;
+  color: white;
+  margin: 0 16px;
+}
+
+.users-page .badge-admin {
+  background-color: #ffc409;
+}
+
+.users-page .badge-user {
+  background-color: #9d4edd;
+}
+
+.users-page .user-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.users-page .action-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: none;
+  background-color: transparent;
+  color: #9d4edd;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.users-page .action-button:hover {
+  background-color: rgba(56, 128, 255, 0.1);
+}
+
+.users-page .action-button-danger {
+  color: #eb445a;
+}
+
+.users-page .action-button-danger:hover {
+  background-color: rgba(235, 68, 90, 0.1);
+}
+
+.users-page .alert-content p {
+  margin-top: 0;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+ 
+.toast-container {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 12px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  color: white;
+  font-size: 14px;
+  z-index: 2000;
+  animation: fadeIn 0.3s, fadeOut 0.3s 2.7s;
+  max-width: 350px;
+  text-align: center;
+}
+
+.toast-container p {
+  margin: 0;
+}
+
+.toast-success {
+  background-color: #2dd36f;
+}
+
+.toast-danger {
+  background-color: #eb445a;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, 20px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+  to {
+    opacity: 0;
+    transform: translate(-50%, 20px);
+  }
+}
+
+@media (max-width: 640px) {
+  .users-page .user-item {
+    flex-wrap: wrap;
+  }
+  
+  .users-page .badge {
+    margin: 8px 0;
+  }
+  
+  .users-page .user-actions {
+    width: 100%;
+    justify-content: flex-end;
+    margin-top: 10px;
+  }
+}
