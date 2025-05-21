@@ -1,0 +1,166 @@
+.time-entry-list {
+  width: 100%;
+}
+
+.time-entry-list .filters-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.time-entry-list .date-filter {
+  display: flex;
+  align-items: center;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  padding: 8px 12px;
+  margin-right: 10px;
+  border: 1px solid #e0e0e0;
+}
+
+.time-entry-list .date-input-inline {
+  border: none;
+  background: transparent;
+  font-size: 14px;
+  color: #333;
+  padding: 0 8px;
+  outline: none;
+}
+
+.time-entry-list .icon {
+  font-size: 16px;
+  color: #555;
+}
+
+.time-entry-list .search-container {
+  flex: 1;
+  min-width: 200px;
+}
+
+.time-entry-list .time-entries-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.time-entry-list .time-entry-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 16px;
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.2s;
+}
+
+.time-entry-list .time-entry-item:last-child {
+  border-bottom: none;
+}
+
+.time-entry-list .time-entry-item:hover {
+  background-color: #f9f9f9;
+}
+
+.time-entry-list .time-entry-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.time-entry-list .time-entry-header {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.time-entry-list .time-entry-user {
+  font-weight: 500;
+}
+
+.time-entry-list .badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  color: white;
+}
+
+.time-entry-list .badge-success {
+  background-color: #2dd36f;
+}
+
+.time-entry-list .badge-warning {
+  background-color: #ffc409;
+}
+
+.time-entry-list .badge-medium {
+  background-color: #92949c;
+  margin-left: 6px;
+}
+
+.time-entry-list .time-entry-details {
+  display: flex;
+  align-items: center;
+  margin: 6px 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.time-entry-list .detail-icon {
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+.time-entry-list .detail-icon-margin {
+  margin-left: 12px;
+}
+
+.time-entry-list .time-entry-comments {
+  margin: 6px 0 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.time-entry-list .time-entry-actions {
+  display: flex;
+  gap: 4px;
+  margin-left: 16px;
+}
+
+.time-entry-list .action-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: none;
+  background-color: transparent;
+  color: #9d4edd;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.time-entry-list .action-button:hover {
+  background-color: rgba(56, 128, 255, 0.1);
+}
+
+.time-entry-list .action-button-danger {
+  color: #eb445a;
+}
+
+.time-entry-list .action-button-danger:hover {
+  background-color: rgba(235, 68, 90, 0.1);
+}
+
+@media (max-width: 640px) {
+  .time-entry-list .filters-container {
+    flex-direction: column;
+  }
+  
+  .time-entry-list .time-entry-actions {
+    flex-direction: column;
+  }
+}
