@@ -1,0 +1,107 @@
+.admin-dashboard {
+  width: 100%;
+ }
+ 
+ .admin-dashboard .dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 25px;
+ }
+ 
+ .admin-dashboard .welcome-section {
+  display: flex;
+  flex-direction: column;
+ }
+ 
+ .admin-dashboard .logout-button {
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 8px 15px;
+  font-size: 14px;
+  color: #444;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: all 0.2s;
+ }
+ 
+ .admin-dashboard .logout-button:hover {
+  background-color: #f1f3f5;
+  border-color: #c8c9ca;
+ }
+ 
+ .admin-dashboard .logout-icon {
+  margin-right: 6px;
+  font-size: 16px;
+  color: #e74c3c;
+ }
+ 
+ .admin-dashboard .action-buttons-container {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+ }
+ 
+ .admin-dashboard .action-button {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s;
+ }
+ 
+ .admin-dashboard .time-entries-button {
+  background-color: #9d4edd;
+  color: white;
+ }
+ 
+ .admin-dashboard .time-entries-button:hover {
+  background-color: #8e44ad;
+ }
+ 
+ .admin-dashboard .users-button {
+  background-color: #9d4edd;
+  color: white;
+ }
+ 
+ .admin-dashboard .users-button:hover {
+  background-color: #8e44ad;
+ }
+ 
+ .admin-dashboard .button-icon {
+  margin-right: 8px;
+  font-size: 18px;
+ }
+ 
+ @media (max-width: 768px) {
+  .admin-dashboard .dashboard-header {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .admin-dashboard .logout-button {
+    align-self: flex-end;
+  }
+  
+  .admin-dashboard .action-buttons-container {
+    flex-direction: column;
+  }
+  
+  .admin-dashboard .action-button {
+    width: 100%;
+  }
+ }
+ 
+ @media (max-width: 576px) {
+  .admin-dashboard .dashboard-header h1 {
+    font-size: 24px;
+  }
+ }
